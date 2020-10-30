@@ -2,30 +2,88 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lotus Fit</title>
+        <title>Lotus Boutique</title>
     </head>
 
     <body>
         <div>
-            <h1 id="title">Lotus Fit</h1>
+            <h1 id="title">Lotus Boutique</h1>
             
-            <p id="description">Thank you for shopping at Lotus Fit! We'd appreciate it if you can tell us a little bit 
+            <p id="description">Thank you for shopping at Lotus Boutique! We'd appreciate it if you can tell us a little bit 
                 about your shopping experience. Responses will be used to improve our customer service. 
             </p>
 
             <form id="survey-form">
 
                 <div>
-                    <label for="name">Name:</label>
-                        <input id="name" type="text" placeholder="Ex. John Doe">
+                    <label id="name-label" for="name">Name:</label>
+                        <input id="name" type="text" placeholder="Ex. John Doe" name="name" required>
                 </div>   
 
                 <br>
 
                 <div>
-                    <label for="email">Email:</label>
-                        <input id="email" type="text" placeholder="Ex. example.email@lotus.com" required>
+                    <label id="email-label" for="email">Email:</label>
+                        <input id="email" type="email" placeholder="Ex. example.email@lotus.com" name="email" required>
                 </div>
+
+                <br>
+
+                <div>
+                    <label id="number-label" for="minutes">How many minutes did you have to wait until you were assisted?</label>
+                        <input id="number" type="number" name="minutes-assisted" min="0" max="200" placeholder="Minutes" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label id="dropdown-label" for="hear">How did you hear about us?</label>
+                        <select id="dropdown" name="select" required>
+                            <option value="choose">Choose an option</option>
+                            <option value="advertisement">Advertisement</option>
+                            <option value="family-friend">Family/Friend</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="employee">Employee</option>
+                            <option value="promotions">Promotions</option>
+                            <option value="have-not-heard">Have not heard of it until now</option>
+                        </select>
+                </div>
+
+                <br>
+                
+                <div>
+                    <label for="rate">How would you rate your experience here?</label>
+                        <input class="rate-experience" type="radio" name="experience-rating" value="one">1
+                        <input class="rate-experience" type="radio" name="experience-rating" value="two">2
+                        <input class="rate-experience" type="radio" name="experience-rating" value="three">3
+                        <input class="rate-experience" type="radio" name="experience-rating" value="four">4
+                        <input class="rate-experience" type="radio" name="experience-rating" value="five">5
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="whohelped">Who were you helped by?</label>
+                        <input class="who" type="checkbox" name="associate" value="kelly">Kelly
+                        <input class="who" type="checkbox" name="associate" value="Sarah">Sarah
+                        <input class="who" type="checkbox" name="associate" value="kelvin">Kelvin
+                        <input class="who" type="checkbox" name="associate" value="cindy">Cindy
+                        <input class="who" type="checkbox" name="associate" value="matt">Matt
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="comments"><p>Any comments or suggestions?</label></p>
+                    <textarea id="suggestions" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit" id="submit">Submit</button>
+
+                <p>Thank you for your time!</p>
 
             </form>
 
@@ -36,15 +94,3 @@
 
 
 
-<!--
-    Customer satisfaction questionaire
-    Add description of survey
-    Questions: 
-        1. Name
-        2. Email
-        3. How many minutes did you have to wait until you were assisted?
-        4. How did you hear about us? -dropdown menu
-        5. How would you rate your experience here?
-        6. Who were you helped by? (Select all that apply)
-        7. Additional comments
--->
