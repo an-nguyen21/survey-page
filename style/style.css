@@ -1,7 +1,8 @@
 body {
     background-image: url(../images/cloud.jpg);
-    background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 100%;
+    height: auto;
+    
 }
 
 #title {
@@ -14,8 +15,8 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 
 #description {
     text-align: center;
-    margin-right: 400px;
-    margin-left: 400px;
+    margin-right: 20%;
+    margin-left: 20%;
     font-family: 'Tajawal', sans-serif;
     font-size: 1.4em;
     color: white;
@@ -24,13 +25,23 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 #survey-form {
     background-color: #bac7de;
     opacity: 0.7;
-    margin: 10px 400px 20px 400px;
+    margin: 0% 20% 1% 20%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 3%;
-    padding-bottom: 4%;
+    padding-bottom: 2%;
     font-family: 'Tajawal', sans-serif;
     font-size: 1.15em;
+    position: relative;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+}
+
+#survey-form:after {
+    content: "";
+    display: block;
+    padding-bottom: 3%;
 }
 
 #name {
